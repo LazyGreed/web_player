@@ -1,0 +1,164 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #141414;
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #000000;
+    color: #000000;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+body.dark-mode .theme-toggle {
+    color: #000000;
+}
+
+.video-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #181818;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .video-player {
+    background: #000000;
+}
+
+video {
+    width: 100%;
+    max-width: 100%;
+    max-height: 80vh;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.controls input, .controls button {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+body.dark-mode .controls input, body.dark-mode .controls button {
+    background-color: #000000;
+    border-color: #000000;
+    color: #000000;
+}
+
+.controls input[type="file"] {
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.controls input[type="file"]::file-selector-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.controls input[type="file"]::file-selector-button:hover {
+    background-color: #555;
+}
+
+.controls button {
+    background-color: #e50914;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.controls button:hover {
+    background-color: #f40612;
+}
+
+body.dark-mode .controls input {
+    background-color: #444;
+    border-color: #666;
+    color: #fff;
+}
+
+body.dark-mode .controls input[type="file"] {
+    background-color: #555;
+}
+
+body.dark-mode .controls input[type="file"]::file-selector-button {
+    background-color: #555;
+}
+
+body.dark-mode .controls input[type="file"]::file-selector-button:hover {
+    background-color: #777;
+}
+
+body.dark-mode .controls button {
+    background-color: #f40612;
+    border-color: #f40612;
+}
+
+body.dark-mode .controls button:hover {
+    background-color: #e50914;
+}
+
+@media (min-width: 600px) {
+    .controls {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .controls input, .controls button {
+        margin: 5px;
+        width: auto;
+        flex: 1;
+    }
+}

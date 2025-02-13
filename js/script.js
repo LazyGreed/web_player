@@ -4,7 +4,6 @@ document.getElementById('fileInput').addEventListener('change', function(event) 
     if (file) {
         const fileURL = URL.createObjectURL(file);
         video.src = fileURL;
-        video.play();
     }
 });
 
@@ -13,7 +12,6 @@ document.getElementById('loadUrlButton').addEventListener('click', function() {
     const video = document.getElementById('video');
     if (url) {
         video.src = url;
-        video.play();
     }
 });
 

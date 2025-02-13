@@ -29,10 +29,10 @@ This project is a simple web video player that allows users to upload a local vi
 ## Screenshots
 
 ### Light Mode
-![Light Mode](light_mode.png)
+![Light Mode](screenshots/light_mode.png)
 
 ### Dark Mode
-![Dark Mode](dark_mode.png)
+![Dark Mode](screenshots/dark_mode.png)
 
 ## License
 
