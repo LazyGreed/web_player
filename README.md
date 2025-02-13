@@ -16,8 +16,8 @@ This project is a simple web video player that allows users to upload a local vi
 ## File Structure
 
 - `index.html`: The main HTML file that contains the structure of the web video player.
-- `styles.css`: The CSS file that contains styles for the web video player.
-- `script.js`: The JavaScript file that handles video file uploads, URL loading, and theme toggling.
+- `css/styles.css`: The CSS file that contains styles for the web video player.
+- `js/script.js`: The JavaScript file that handles video file uploads, URL loading, and theme toggling.
 
 ## Usage
 
