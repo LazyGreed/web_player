@@ -32,7 +32,3 @@ This project is a simple web video player that allows users to upload a local vi
 
 ### Dark Mode
 ![Dark Mode](screenshots/dark_mode.png)
-
-## License
-
-This project is licensed under the MIT License.
