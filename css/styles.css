@@ -162,3 +162,18 @@ body.dark-mode .controls button:hover {
         flex: 1;
     }
 }
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .video-player {
+        padding: 10px;
+    }
+
+    .controls input, .controls button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
